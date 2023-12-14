@@ -262,43 +262,43 @@ const trends = [
   
 
 
-// // TERMS AND CONDITIONS
-// document.addEventListener('DOMContentLoaded', (event) => {
-//     const termsModal = document.getElementById('termsModal');
-//     const agreeButton = document.getElementById('agreeButton');
-//     const checkboxes = document.querySelectorAll('.term-checkbox');
+// TERMS AND CONDITIONS
+document.addEventListener('DOMContentLoaded', (event) => {
+    const termsModal = document.getElementById('termsModal');
+    const agreeButton = document.getElementById('agreeButton');
+    const checkboxes = document.querySelectorAll('.term-checkbox');
   
-//     // Show the modal
-//     termsModal.style.display = 'block';
+    // Show the modal
+    termsModal.style.display = 'block';
   
-//     // Function to check if all checkboxes are checked
-//     function areAllChecked() {
-//         return Array.from(checkboxes).every(checkbox => checkbox.checked);
-//     }
+    // Function to check if all checkboxes are checked
+    function areAllChecked() {
+        return Array.from(checkboxes).every(checkbox => checkbox.checked);
+    }
   
-//     // Event listener for the "I Agree" button
-//     agreeButton.addEventListener('click', () => {
-//         if (areAllChecked()) {
-//             termsModal.style.display = 'none';
-//         } else {
-//             alert('Please agree to all terms to continue.');
-//         }
-//     });
+    // Event listener for the "I Agree" button
+    agreeButton.addEventListener('click', () => {
+        if (areAllChecked()) {
+            termsModal.style.display = 'none';
+        } else {
+            alert('Please agree to all terms to continue.');
+        }
+    });
   
-//     // Event listener for closing the modal (disabled if not all checked)
-//     termsModal.querySelector('.close').addEventListener('click', () => {
-//         if (areAllChecked()) {
-//             termsModal.style.display = 'none';
-//         }
-//     });
+    // Event listener for closing the modal (disabled if not all checked)
+    termsModal.querySelector('.close').addEventListener('click', () => {
+        if (areAllChecked()) {
+            termsModal.style.display = 'none';
+        }
+    });
   
-//     // Prevent closing modal by clicking outside of it RE ENABLE LATER!!!!!!!
-//     window.onclick = function(event) {
-//         if (event.target === termsModal && areAllChecked()) {
-//             termsModal.style.display = 'none';
-//         }
-//     };
-//   });
+    // Prevent closing modal by clicking outside of it RE ENABLE LATER!!!!!!!
+    window.onclick = function(event) {
+        if (event.target === termsModal && areAllChecked()) {
+            termsModal.style.display = 'none';
+        }
+    };
+  });
 // End terms and conditions  
 
 function initQuiz() {
